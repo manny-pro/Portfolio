@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+
+
+.full{
+  font-weight: 600;
+  margin-top: 50px;
+}
+.name {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about {
+  margin-top: 30px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.carreer{
+  text-align: center;
+  font-size: large;
+}
+
+.portofolio {
+  text-align: center;
+  font-weight: 900;
+}
+
+.text {
+  text-align: center;
+  font-weight: 400;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+.container .box {
+  position: relative;
+  width: 275px;
+  height: 275px;
+  background: transparent;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+.container:hover .box {
+  transform: rotateY(25deg);
+}
+.container .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.container .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .box .imgBx:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.container .box:hover .imgBx:before {
+  opacity: 1;
+}
+.container .box .imgBx  img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.container .box .content h2 {
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+  font-weight: 600;
+}
+.container .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.container .box .content p {
+  color: white;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.container .box:hover .content p {
+  transform: translateY(0px);
+}
+
+.container .box .imgBx2 {
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  width: 110%;
+  height: 100%;
+}
+
+.container .box .imgBx1 {
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  width: 50%;
+  height: 100%;
+}
+
+
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  position:absolute;
+  z-index:1;
+  
+}
+.main li{
+  list-style:none;
+  background: transparent;
+  width: 400px;
+  padding: 0 5px;
+  border: 1px solid white;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 25px;
+  -webkit-transition: all .5s ease-in-out;
+  
+}
+
+.main li:nth-child(odd){
+  
+  -webkit-transform-origin: top;
+  -webkit-transform: perspective(350px) rotateX(-90deg);
+}
+
+.main li:nth-child(even){
+   margin-top:-65px;
+  -webkit-transform-origin: bottom;
+  -webkit-transform: perspective(350px) rotateX(90deg);
+}
+
+.hov:hover li:nth-child(odd){
+  -webkit-transform-origin: top;
+  -webkit-transform: perspective(350px) rotateX(0deg);
+  margin-top:0;
+}
+
+.hov:hover li:nth-child(even){
+  -webkit-transform-origin: bottom;
+  -webkit-transform: perspective(350px) rotateX(0deg);
+   margin-top:0;
+}
+
+.main li:first-child{
+  margin-top:0;
+}
+
+.hov{
+  border: 1px solid white;
+  border-radius: 25px;
+  position:relative;
+  height: 40px;
+  width: 400px;
+  background: transparent;
+  font-size: 13px;
+  font-family: Helvetica;
+  font-weight:bold;
+  text-align: center;
+  line-height: 40px;
+  list-style:none;
+  z-index:2;
+  
+}
+
+.dvp {
+  margin-left: -200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+  font-size: larger;
+}
