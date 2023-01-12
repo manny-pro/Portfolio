@@ -24,7 +24,6 @@ function Footer() {
     <FooterSection>
       <div className="Container">
         <span>
-          Coded with ❤️ by{" Yannis Manicord "}
           <a
             href="https://github.com/manny-pro/"
             target="_blank"

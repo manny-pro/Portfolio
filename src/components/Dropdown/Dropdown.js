@@ -93,7 +93,7 @@ function Dropdown({ isOpen, toggle }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Télecharger mon CV
+          Download my CV
         </a>
       </NavBtn>
     </SiderBar>

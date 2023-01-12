@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { stackList } from "../../data/ProjectData";
 import {
   Image,
@@ -8,29 +8,39 @@ import {
   TechName,
   ContactWrapper,
 } from "./AboutElements";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function About() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <ContactWrapper id="about">
       <div className="Container">
         <div className="SectionTitle">About Me</div>
         <div className="BigCard">
+          <div data-aos="fade-down" data-aos-delay="100">
           <Image
-            src="https://cdn-icons-png.flaticon.com/512/5556/5556529.png"
+            src="https://raw.githubusercontent.com/manny-pro/portfolio-image/main/IMG_899B4D62EF00-1.jpeg"
             alt="man-svgrepo"
           />
+          </div>
           <div className="AboutBio">
-            Hello! Je m'appelle <strong>Yannis Manicord</strong> Autodidacte depuis mon plus jeune âge, j'aime apprendre de nouvelles choses pour améliorer mes compétences. De nature très curieuse, j'adore le monde du web et des nouvelles technologies, ce que j'aime le plus c'est l'art et la précision derrière chaque conception. Avec toutes mes capacités et mes connaissances, j'aurai le plaisir de me consacrer pleinement au développement de vos idées afin d'en faire de grands projets.
+          Hello, my name is<strong>Yannis Manicord</strong> self-taught since my youngest age, I like to learn new things to improve my skills. Very curious by nature, I love the world of web and new technologies, what I like most is the art and precision behind each design. With all my skills and knowledge, I will have the pleasure to dedicate myself fully to the development of your ideas in order to make them great projects.
           </div>
           <div className="AboutBio tagline2">
-            J'ai acquis une certaine confiance dans l'utilisation des technologies suivantes.
+          I have gained confidence in the use of the following technologies.
           </div>
           <Technologies>
             {stackList.map((stack, index) => (
               <Tech key={index} className="tech">
+                <div data-aos="fade-up" data-aos-delay="100">
                 <TechImg src={stack.img} alt={stack.name} />
                 <TechName>{stack.name}</TechName>
+                </div>
               </Tech>
             ))}
+            
           </Technologies>
         </div>
       </div>

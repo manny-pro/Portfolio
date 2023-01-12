@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ProjectList } from "../../../data/ProjectData";
 import {
   Card,
@@ -7,15 +7,25 @@ import {
   Stack,
   BtnGroup,
 } from "./ProjectCardElements";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function ProjectCard() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <>
       {ProjectList.map((list, index) => (
         <Card key={index}>
+          <div data-aos="fade-right" data-aos-delay="100">
           <CardLeft>
             <img src={list.img} alt={list.name} />
           </CardLeft>
+          </div>
           <CardRight>
+            <div data-aos="fade-left" data-aos-delay="100">
+
             <h4>{list.title}</h4>
             <p>{list.description}</p>
             <Stack>
@@ -32,6 +42,7 @@ function ProjectCard() {
                 Github
               </a>
             </BtnGroup>
+            </div>
           </CardRight>
         </Card>
       ))}

@@ -4,12 +4,10 @@ import pdf from "../../Assets/CV-Manicord.pdf";
 
 const Header = ({ toggle }) => {
   const onButtonClick = () => {
-    // using Java Script method to get PDF file
     fetch(pdf).then(response => {
         response.blob().then(blob => {
-            // Creating new object of PDF file
+
             const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
             alink.download = pdf;
@@ -22,7 +20,7 @@ const Header = ({ toggle }) => {
       <Nav>
         <Logo to="/">
           <img
-            src="https://raw.githubusercontent.com/manny-pro/portfolio-image/main/logo.svg.png?token=GHSAT0AAAAAABZSMRQEAEMGQJJ35I2JPXWQY555ZTQ"
+            src="https://raw.githubusercontent.com/manny-pro/portfolio-image/main/IMG_899B4D62EF00-1.jpeg"
             alt="logo"
           />
         </Logo>
@@ -39,7 +37,7 @@ const Header = ({ toggle }) => {
         </NavMenu>
         <NavBtn>
             <button className="btn PrimaryBtn" onClick={onButtonClick}>
-            Télecharger mon CV
+            Download my CV
             </button>
         </NavBtn>
       </Nav>

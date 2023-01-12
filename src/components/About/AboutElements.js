@@ -11,6 +11,7 @@ export const Image = styled.img`
 `;
 
 export const Technologies = styled.div`
+  flex-direction: row;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,4 +36,6 @@ export const TechImg = styled.img`
 
 export const TechName = styled.div`
   font-size: 14px;
+  display: flex;
+  justify-content: center;
 `;

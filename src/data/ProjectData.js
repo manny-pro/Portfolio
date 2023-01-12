@@ -3,7 +3,7 @@ export const ProjectList = [
   {
     img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/Capture%20d’écran%202023-01-11%20à%2001.34.30.png',
     title: "My Portfolio",
-    description: "Bien sûr, j'ai créé mon propre site web personnel.",
+    description: "Of course, I created my own personal website.",
     tech_stack: "React, Javascript, Css",
     github_url: "https://your_project_github_link",
     demo_url: "https://your_project_demo_link",
@@ -12,14 +12,14 @@ export const ProjectList = [
     img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/Uhmweather%20-%20iOS%20Weather%20App%20Template.jpg',
     title: "Weather App",
     description:
-      "C'est une simple application météo qui utilise l'API OpenWeatherMap pour obtenir les données météorologiques.",
+      "It is a simple weather application that uses the OpenWeatherMap API to get weather data.",
     tech_stack: "React-Native, Javascript, Css",
     github_url: "https://github.com/manny-pro/weathers-app",
   },
   {
     img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/Capture%20d’écran%202023-01-10%20à%2016.33.43.png',
     title: "E-commerce",
-    description: "Création d'un site de commerce électronique simple en utilisant reactjs.",
+    description: "Creating a simple e-commerce site using reactjs.",
     tech_stack: "Reactjs, Css",
     github_url: "https://your_project_github_link",
     demo_url: "https://your_project_demo_link/",
@@ -28,7 +28,7 @@ export const ProjectList = [
     img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/Capture%20d’écran%202023-01-10%20à%2016.36.05.png',
     title: "Gagnant du Code Camp ETNA",
     description:
-      "J'ai participé au code camp organisé par l'ETNA qui consistait à dynamiser leurs intranet et j'ai gagné le premier prix.",
+      "I took part in the code camp organized by ETNA which consisted in boosting their intranet and I won the first prize.",
     tech_stack: "MongoDB, Javascript, Reactjs, Css",
     github_url: "https://github.com/manny-pro/defi-etna",
   },
@@ -38,7 +38,7 @@ export const ProjectList = [
 
 export const stackList = [
   {
-    img: "https://assets.stickpng.com/images/5847f5bdcef1014c0b5e489c.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png",
     name: "HTML",
   },
   {
@@ -58,11 +58,11 @@ export const stackList = [
     name: "C",
   },
   {
-    img: "https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
     name: "Python",
   },
   {
-    img: "https://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
     name: "ReactJS",
   },
   {
@@ -90,7 +90,7 @@ export const stackList = [
     name: "MongoDB",
   },
   {
-    img: "https://assets.stickpng.com/images/5848104fcef1014c0b5e4950.png",
+    img: "https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-cdb-for-mysql-7.png",
     name: "MySQL",
   },
   {

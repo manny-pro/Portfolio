@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Dropdown from "../Dropdown/Dropdown";
 import Header from "../Header/Header";
 import {
@@ -10,12 +10,17 @@ import {
   ScrollDown,
   ScrollLink,
 } from "./HeroElements";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Hero() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <main>
       <Dropdown isOpen={isOpen} toggle={toggle} />
@@ -23,22 +28,26 @@ function Hero() {
       <HeroContainer>
         <HeroWrapper>
           <HeroLeft>
-            <h1>Hi, Je suis Yannis Manicord</h1>
-            <h5>Développeur Fullstack</h5>
+            <div data-aos="fade-right" data-aos-delay="100">
+            <h1>Hi, I'm Yannis Manicord</h1>
+            <h5>Fullstack Developer</h5>
             <p>
-              Programmer n'est sont pas que des lignes de codes mais de l'art moderne 
+              Programming is not just lines of code but modern art 
             </p>
+            </div>
           </HeroLeft>
           <HeroRight>
+            <div data-aos="fade-left" data-aos-delay="100">
             <Image
-              src="https://cdn-icons-png.flaticon.com/512/5556/5556529.png"
+              src="https://raw.githubusercontent.com/manny-pro/portfolio-image/main/IMG_9928.jpg"
               alt="ME"
             />
+            </div>
           </HeroRight>
         </HeroWrapper>
         <ScrollDown to="projects">
           <ScrollLink>
-            Descendez
+            Go down
             <img
               src="https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/scroll-down.svg"
               alt="scroll-down"
