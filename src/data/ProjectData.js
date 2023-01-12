@@ -1,7 +1,7 @@
 // Project List
 export const ProjectList = [
   {
-    img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/Capture%20d’écran%202023-01-11%20à%2001.34.30.png',
+    img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/Capture%20d’écran%202023-01-12%20à%2016.25.15.png',
     title: "My Portfolio",
     description: "Of course, I created my own personal website.",
     tech_stack: "React, Javascript, Css",
