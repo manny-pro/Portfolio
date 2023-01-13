@@ -5,8 +5,7 @@ export const ProjectList = [
     title: "My Portfolio",
     description: "Of course, I created my own personal website.",
     tech_stack: "React, Javascript, Css",
-    github_url: "https://your_project_github_link",
-    demo_url: "https://your_project_demo_link",
+    github_url: "https://github.com/manny-pro/portfolio",
   },
   {
     img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/Uhmweather%20-%20iOS%20Weather%20App%20Template.jpg',
@@ -21,8 +20,7 @@ export const ProjectList = [
     title: "E-commerce",
     description: "Creating a simple e-commerce site using reactjs.",
     tech_stack: "Reactjs, Css",
-    github_url: "https://your_project_github_link",
-    demo_url: "https://your_project_demo_link/",
+    github_url: "https://github.com/manny-pro/NeverBroke-e-commerce",
   },
   {
     img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/Capture%20d’écran%202023-01-10%20à%2016.36.05.png',
@@ -31,6 +29,13 @@ export const ProjectList = [
       "I took part in the code camp organized by ETNA which consisted in boosting their intranet and I won the first prize.",
     tech_stack: "MongoDB, Javascript, Reactjs, Css",
     github_url: "https://github.com/manny-pro/defi-etna",
+  },
+  {
+    img: 'https://raw.githubusercontent.com/manny-pro/portfolio-image/main/HD-wallpaper-breath-hyrule-castle-breath-of-the-wild-zelda.jpg',
+    title: "Zelda - PVP Game",
+    description: "I've coded a PVP Zelda game entirely made in javasript.",
+    tech_stack: "Javascript",
+    github_url: "https://github.com/manny-pro/Zelda-game"
   },
 ];
 
